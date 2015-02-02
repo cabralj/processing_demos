@@ -2,10 +2,12 @@
 
 int w = 126;
 int h = 174;
+int sh = 0;
+int sw = 1;
 
 size(1000,1000);
 noSmooth();
-strokeWeight(2);
+strokeWeight(4);
 
 PImage bkg;
 bkg = loadImage("bkg.png");
@@ -55,44 +57,44 @@ imgY = loadImage("Y.png");
 imgZ = loadImage("Z.png");
 
 tint(225);
-image(imgC,0,0);
-image(imgA,w,0);
-image(imgB,(w*2),0);
-image(imgR,(w*3),0);
-image(imgA,(w*4),0);
-image(imgL,(w*5),0);
+image(imgC,sw+0,sh);
+image(imgA,sw+w,sh);
+image(imgB,sw+(w*2),sh);
+image(imgR,sw+(w*3),sh);
+image(imgA,sw+(w*4),sh);
+image(imgL,sw+(w*5),sh);
 
-image(imgZ, (w*0), h);
-image(imgE, (w*1), h);
-image(imgB, (w*2), h);
-image(imgR, (w*3), h);
-image(imgA, (w*4), h);
+image(imgZ, (w*0), sh+h);
+image(imgE, (w*1), sh+h);
+image(imgB, (w*2), sh+h);
+image(imgR, (w*3), sh+h);
+image(imgA, (w*4), sh+h);
 
-image(imgP, (w*0), h*2);
-image(imgA, (w*1), h*2);
-image(imgT, (w*2), h*2);
-image(imgT, (w*3), h*2);
-image(imgE, (w*4), h*2);
-image(imgR, (w*5), h*2);
-image(imgN, (w*6), h*2);
-image(imgS, (w*7), h*2);
+image(imgP, (w*0), sh+h*2);
+image(imgA, (w*1), sh+h*2);
+image(imgT, (w*2), sh+h*2);
+image(imgT, (w*3), sh+h*2);
+image(imgE, (w*4), sh+h*2);
+image(imgR, (w*5), sh+h*2);
+image(imgN, (w*6), sh+h*2);
+image(imgS, (w*7), sh+h*2);
 
-image(imgF, (w*0), h*3);
-image(imgA, (w*1), h*3);
-image(imgU, (w*2), h*3);
-image(imgX, (w*3), h*3);
-image(imgF, (w*4), h*3);
-image(imgA, (w*5), h*3);
-image(imgU, (w*6), h*3);
-image(imgX, (w*7), h*3);
+image(imgF, (w*0), sh+h*3);
+image(imgA, (w*1), sh+h*3);
+image(imgU, (w*2), sh+h*3);
+image(imgX, (w*3), sh+h*3);
+image(imgF, (w*4), sh+h*3);
+image(imgA, (w*5), sh+h*3);
+image(imgU, (w*6), sh+h*3);
+image(imgX, (w*7), sh+h*3);
 
 
-image(imgS, (w*0), h*4);
-image(imgE, (w*1), h*4);
-image(imgE, (w*2), h*4);
-image(imgC, (w*3), h*4);
-image(imgR, (w*4), h*4);
-image(imgE, (w*5), h*4);
-image(imgT, (w*6), h*4);
+image(imgS, (w*0), sh+h*4);
+image(imgE, (w*1), sh+h*4);
+image(imgE, (w*2), sh+h*4);
+image(imgC, (w*3), sh+h*4);
+image(imgR, (w*4), sh+h*4);
+image(imgE, (w*5), sh+h*4);
+image(imgT, (w*6), sh+h*4);
 
 save("faux_demo_image.png");
